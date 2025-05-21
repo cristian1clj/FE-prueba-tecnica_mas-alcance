@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #0f71d4;
+    --tertiary-color: #f1f1f1;
+    --secondary-color-soft: #6ba4dd;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--tertiary-color);
+}
+
+.button {
+  border-radius: 5px;
+  padding: 10px 15px;
+  user-select: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  max-height: 70vh;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  padding: 20px 30px;
+}
+
+.close-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: red;
+  color: var(--primary-color);;
+  border: none;
+  cursor: pointer;
+}

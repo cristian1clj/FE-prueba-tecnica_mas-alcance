@@ -1,0 +1,37 @@
+<section class="user-list">
+    <div class="button posts-button" (click)="showPosts()">Ver publicaciones</div>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>nombre</th>
+                <th>username</th>
+                <th>correo</th>
+                <th>direccion</th>
+                <th>telefono</th>
+                <th>website</th>
+                <th>compañia</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (user of users; track $index) {
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.address.city }}, {{ user.address.street }} {{ user.address.suite }}</td>
+                    <td>{{ user.phone }}</td>
+                    <td>{{ user.website }}</td>
+                    <td>{{ user.company.name }}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @if (postsVisibility) {
+        <app-posts-list
+            [usernames]="usernames"
+            (close)="hidePosts()"
+        />
+    }
+</section>

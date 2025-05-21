@@ -1,0 +1,33 @@
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.posts-list h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.posts-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.post-item {
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.post-head {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.post-head span {
+  color: rgb(79, 77, 77);
+  font-size: 0.8rem;
+}

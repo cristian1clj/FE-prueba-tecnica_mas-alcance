@@ -1,0 +1,19 @@
+<div class="modal">
+    <div class="posts-list modal-content">
+        <div class="posts-header">
+            <h3>Publicaciones</h3>
+            <div class="close-button" (click)="onClose()">Cerrar</div>
+        </div>
+        @for (post of posts; track $index) {
+            <div class="post-item">
+                <div class="post-head">
+                    <span>[{{ usernames.get(post.userId) }}]</span>
+                    {{ post.title }}
+                </div>
+                <div class="post-body">
+                    {{ post.body }}
+                </div>
+            </div>
+            }
+    </div>
+</div>

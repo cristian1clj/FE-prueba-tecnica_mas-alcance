@@ -1,0 +1,40 @@
+.user-list {
+    width: 100%;
+    height: calc(100vh - 98px);
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-list table {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: var(--secondary-color-soft);
+    color: var(--primary-color);
+}
+
+.posts-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    width: 90%;
+}
+
+/* .table-button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+} */
