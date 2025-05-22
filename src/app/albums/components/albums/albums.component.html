@@ -3,7 +3,7 @@
         <input type="text" placeholder="id de usuario" [(ngModel)]="userId">
         <button class="button" (click)="search()">Buscar</button>
     </div>
-    @if (albums) {
+    @if (albums && albums.length > 0) {
         <table>
             <thead>
                 <tr>

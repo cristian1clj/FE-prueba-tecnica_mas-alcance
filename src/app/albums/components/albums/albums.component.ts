@@ -16,8 +16,11 @@ export class AlbumsComponent {
 
   search() {
     if (this.userId) {
-      this.getAlbums(this.userId).subscribe(albums => {
-        this.albums = albums;
+      this.getAlbums(this.userId).subscribe({
+        next: albums => {
+          this.albums = albums;
+        },
+        error: e => console.error(e)
       });
     }
   }
