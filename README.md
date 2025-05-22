@@ -1,27 +1,42 @@
-# FEPruebaTecnicaMasAlcance
+# 👆 Prueba tecnica \[Front-end\] ~ +Alcance
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+Repositorio con la parte del front-end de la prueba tecnica filtro No.3 Desarrollador Junior.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> Este proyecto fue desarrollado con **Angular**. 🅰️
 
-## Code scaffolding
+## ▶️ Como ejecutarlo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para ejecutar el proyecto, siga estos pasos:
 
-## Build
+1. Clone este repositorio en su maquina local.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+git clone https://github.com/cristian1clj/FE-prueba-tecnica_mas-alcance.git
+```
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navegue al directorio del proyecto.
 
-## Running end-to-end tests
+```bash
+cd FE-prueba-tecnica_mas-alcance
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+3. Instale las dependencias requeridas usando npm.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm install
+```
+
+
+4. Ejecute el siguiente comando.
+
+```bash
+npm start
+```
+
+## 👍 Las sugerencias son bienvenidas
+Cualquier sugerencia es bienvenida! si ve algo que pueda mejorar, escribame en [**GitHub**](https://github.com/cristian1clj) o en mi correo (**cristian1clj@gmail.com**) 🙏
+
+Eso me ayudaria a mejorar mis habilidades
