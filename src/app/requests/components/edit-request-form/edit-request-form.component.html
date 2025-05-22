@@ -1,0 +1,19 @@
+<div class="modal">
+    <div class="edit-request-form modal-content">
+        <h3>Editar peticion</h3>
+        <form [formGroup]="requestForm" (ngSubmit)="editRequest()">
+            <div>
+                <label for="method">Metodo</label>
+                <input id="method" formControlName="method" type="text">
+            </div>
+            <div>
+                <label for="response">Response</label>
+                <textarea id="response" formControlName="response"></textarea>
+            </div>
+            <div>
+                <button class="button">Cancelar</button>
+                <button class="button" type="submit">Aceptar</button>
+            </div>
+        </form>
+    </div>
+</div>

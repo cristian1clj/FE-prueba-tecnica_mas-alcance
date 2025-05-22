@@ -1,0 +1,14 @@
+.delete-request {
+    width: 40%;
+}
+
+.delete-request h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.delete-request button {
+    border: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}

@@ -1,0 +1,42 @@
+<section class="requests-list">
+    <!-- <div class="button posts-button" (click)="showPosts()">Ver publicaciones</div> -->
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>metodo</th>
+                <th>response</th>
+                <th>fecha</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (request of requests; track $index) {
+                <tr>
+                    <td>{{ request.id }}</td>
+                    <td>{{ request.method }}</td>
+                    <td class="scrollable-content">{{ request.response }}</td>
+                    <td>{{ request.created_at | date:'dd/MM/YYY HH:mm:ss' }}</td>
+                    <td>
+                        <div class="actions_table">
+                            <div class="button table-button" (click)="openEdit(request)">Editar</div>
+                            <div class="button table-button" (click)="openDelete(request.id)">Eliminar</div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @if (editVisibility) {
+        <app-edit-request-form
+            [request]="requestSelected"
+            (close)="hideEdit()"
+        />
+    }
+    @if (deleteVisibility) {
+        <app-delete-request
+            [requestId]="requestDeleteId"
+            (close)="hideDelete()"
+        />
+    }
+</section>

@@ -13,4 +13,8 @@ export class TopbarComponent {
   navigateHome(): void {
     this.router.navigate(['/']);
   }
+
+  navigateRequestsPage(): void {
+    this.router.navigate(['/requests']);
+  }
 }

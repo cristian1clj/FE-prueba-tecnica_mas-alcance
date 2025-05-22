@@ -1,0 +1,32 @@
+.edit-request-form {
+    width: 40%;
+}
+
+.edit-request-form h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.edit-request-form form div {
+    margin: 10px auto 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.edit-request-form form div label {
+    width: 30%;
+    text-align: end;
+    padding-right: 20px;
+}
+
+.edit-request-form form div input, textarea {
+    width: 30%;
+}
+
+.edit-request-form button {
+    border: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}

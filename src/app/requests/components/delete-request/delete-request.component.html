@@ -1,0 +1,10 @@
+<div class="modal">
+    <div class="delete-request modal-content">
+        <h3>Eliminar peticion</h3>
+        <p>Desea eliminar el registro con id {{ requestId }}?</p>
+        <div>
+            <button class="button" (click)="onClose()">Cancelar</button>
+            <button class="button" (click)="confirmDeleteRequest()">Aceptar</button>
+        </div>
+    </div>
+</div>
