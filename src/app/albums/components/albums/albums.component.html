@@ -1,0 +1,24 @@
+<section class="album-list">
+    <div class="albums-search-bar">
+        <input type="text" placeholder="id de usuario" [(ngModel)]="userId">
+        <button class="button" (click)="search()">Buscar</button>
+    </div>
+    @if (albums) {
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>titulo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (album of albums; track $index) {
+                    <tr>
+                        <td>{{ album.id }}</td>
+                        <td>{{ album.title }}</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</section>

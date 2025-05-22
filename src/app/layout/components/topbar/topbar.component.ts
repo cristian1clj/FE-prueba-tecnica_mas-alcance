@@ -17,4 +17,8 @@ export class TopbarComponent {
   navigateRequestsPage(): void {
     this.router.navigate(['/requests']);
   }
+  
+  navigateAlbumsPage(): void {
+    this.router.navigate(['/albums']);
+  }
 }
