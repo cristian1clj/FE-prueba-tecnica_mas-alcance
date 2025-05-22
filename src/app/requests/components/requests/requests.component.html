@@ -1,5 +1,4 @@
 <section class="requests-list">
-    <!-- <div class="button posts-button" (click)="showPosts()">Ver publicaciones</div> -->
     <table>
         <thead>
             <tr>
@@ -16,7 +15,7 @@
                     <td>{{ request.id }}</td>
                     <td>{{ request.method }}</td>
                     <td class="scrollable-content">{{ request.response }}</td>
-                    <td>{{ request.created_at | date:'dd/MM/YYY HH:mm:ss' }}</td>
+                    <td>{{ request.updated_at | date:'dd/MM/YYY HH:mm:ss' }}</td>
                     <td>
                         <div class="actions_table">
                             <div class="button table-button" (click)="openEdit(request)">Editar</div>

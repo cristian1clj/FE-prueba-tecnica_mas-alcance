@@ -28,18 +28,7 @@ export class EditRequestFormComponent {
     this.requestForm = this.formBuilder.group({
       method: [this.request?.method],
       response: [this.request?.response],
-      created_at: [this.formatDate(this.request?.created_at)],
     });
-  }
-
-  formatDate(dateString?: Date): string | null {
-    if (!dateString) return null;
-    const date = new Date(dateString);
-    return date.toISOString().slice(0, 16);
-  }
-
-  pad(value: number): string {
-    return value.toString().padStart(2, '0');
   }
 
   onClose() {
